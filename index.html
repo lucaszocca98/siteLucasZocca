@@ -10,16 +10,21 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
     
 </head>
-<body>
+<body class="no-js">
 
     <!-- Menu -->
 
-    <header>
-        <a href="#"><span>/* </span class="comment-detail">Lucas Zocca<span class="comment-detail"> */</span></a>
+    <header class="header__menu">
+        <a class="lucas" href="#"><span class="comment-detail">/* </span>Lucas Zocca<span class="comment-detail"> */</span></a>
 
-        <nav>
+        <button style="display: none;" class="header__btnMenu"> <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span></button>
+
+        <nav class="header__nav">
             <ul>
               <li><a href="#">Início</a></li>
               <li><a href="#">Sobre mim</a></li>
@@ -33,9 +38,9 @@
 
     <!-- Início -->
 
-    <section>
-        <h1>Lucas Zocca Fonceca</h1>
-        <h2>Biólogo & Desenvolvedor Full Stack</h2>
+    <section class="hero">
+        <h1 class="hero__title">Lucas Zocca Fonceca</h1>
+        <h2 class="hero__text">Biólogo & Desenvolvedor Full Stack</h2>
         <div class="social-icons">
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-linkedin"></i>
@@ -180,5 +185,6 @@
     <div class="container">
         <h1><span class="comment-detail">/* </span>Contato<span class="comment-detail"> */</span></h1>
     </div>
+    
 </body>
 </html>

@@ -1,0 +1,170 @@
+:root{
+    --greenColor: rgb(0, 173, 111);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    margin-right: auto;    
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+
+.comment-detail{
+    color: var(--greenColor);
+}
+
+
+/* Menu */
+
+a{
+    text-decoration: none;
+}
+
+.lucas{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    float: left;
+}
+
+.header__menu{
+    background-color: black;
+    width: 100%;
+}
+
+.header__nav{
+    clear: left;
+}
+
+.header__nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    background: black;
+    text-align: center;
+    border-bottom: 1px solid var(--greenColor);
+}
+
+.header__nav a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding: 25px 0;
+    transition: .8s ease;
+}
+
+.header__nav a:hover{
+    color: var(--greenColor);
+}
+
+.header__btnMenu{
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.header__btnMenu:hover{
+    cursor: pointer;
+    color: var(--greenColor);
+}
+
+.js .header__nav{
+    transition: max-height 1s;
+}
+
+
+
+/* Início */
+
+.hero{
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(10, 10, 10);
+}
+
+.hero__title{
+    color: white;
+    font-size: 44px;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.hero__text{
+    margin: 5px 30px 35px;
+    color: white;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: normal;
+    color: var(--greenColor);
+    text-shadow: 2px 2px 8px var(--greenColor);
+}
+
+
+
+/* Telas maiores */
+
+@media screen and (min-width: 1025px){
+    .header__menu{
+        position: fixed;
+    }
+
+    .lucas{
+        width: 25%;
+        box-sizing: border-box;
+        text-align: right;
+    }
+
+    .header__btnMenu{
+        display: none;
+    }
+
+    .header__nav{
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
+    }
+    
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header__nav li{
+        border: none;
+        flex-grow: 1;
+    }
+
+    .header__nav a{
+        background: black;  
+    }
+
+}
