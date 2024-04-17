@@ -14,6 +14,25 @@ html{
     scroll-behavior: smooth;
 }
 
+.white-color{
+    color: white;
+}
+
+.margin-h1{
+    margin: 0;
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.dark-color{
+    background-color: black;
+}
+
+.greydark-color{
+    background-color: rgb(10, 10, 10);
+}
+
 .container{
     margin-right: auto;    
     margin-left: auto;
@@ -106,8 +125,6 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: rgb(10, 10, 10);
 }
 
 .hero__title{
@@ -128,10 +145,34 @@ a{
 }
 
 
+/* Sobre mim */
+
+.aboutMe{
+    text-align: center;
+}
+
+.padding-pageSections{
+    padding-bottom: 80px;
+}
+
+.aboutMe-lines{
+    line-height: .5;
+}
+
+.fotoLucas{
+    display: none;
+}
+
+
 
 /* Telas maiores */
 
 @media screen and (min-width: 1025px){
+
+    .zero-spaces{
+        max-width: 100%;
+    }
+
     .header__menu{
         position: fixed;
     }
@@ -167,4 +208,17 @@ a{
         background: black;  
     }
 
+    /* Sobre mim */
+
+    .aboutMe-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotoLucas{
+        border-radius: 50%;
+        height: 200px;
+        display: inline-block;
+    }
 }
