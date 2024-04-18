@@ -113,6 +113,10 @@ a{
     transition: max-height 1s;
 }
 
+.fa-bars{
+    color: var(--greenColor);
+}
+
 
 
 /* Início */
@@ -144,24 +148,116 @@ a{
     text-shadow: 2px 2px 8px var(--greenColor);
 }
 
+.socialLucas{
+    color: white;
+    font-size: 38px;
+    transition: .6s;
+}
+
+.socialLucas:hover{
+    color: var(--greenColor);
+}
+
+.fa-linkedin{
+    margin-left: 30px;
+}
+
 
 /* Sobre mim */
 
-.aboutMe{
+.margin-AboutMe{
+    margin: 0;
+    padding-top: 80px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .padding-pageSections{
     padding-bottom: 80px;
 }
 
+.aboutMe{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 .aboutMe-lines{
-    line-height: .5;
+    line-height: 2.2;
 }
 
 .fotoLucas{
-    display: none;
+    border-radius: 50%;
+    height: 200px;
+    margin-bottom: 80px;
 }
+
+.fotoLucas:hover{
+    outline: 5px solid var(--greenColor);
+}
+
+.aboutMe-content{
+    text-align: center;
+}
+
+.aboutMe-icons{
+    color: var(--greenColor);
+}
+
+.aboutMeFirstIcon{
+    margin-right: 5px;
+}
+
+.aboutMeSecondIcon{
+    margin-left: 5px;
+}
+
+/* Experiência */
+
+.experience{
+    margin-bottom: 40px;
+    border: 1px solid var(--greenColor);
+    max-width: 1025px;    
+}
+
+.experience-textAlign{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.experience-text{
+    padding: 20px;
+}
+
+.experience-text h2{
+    color: var(--greenColor);
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.experience-text p{
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+.experience-text h3{
+    font-weight: normal;
+}
+
+.dateAndLink{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.dateAndLink a{
+    color: var(--greenColor);
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
 
 
 
@@ -175,12 +271,6 @@ a{
 
     .header__menu{
         position: fixed;
-    }
-
-    .lucas{
-        width: 25%;
-        box-sizing: border-box;
-        text-align: right;
     }
 
     .header__btnMenu{
@@ -210,6 +300,14 @@ a{
 
     /* Sobre mim */
 
+    .margin-AboutMe{
+        padding-bottom: 0px;
+    }
+
+    .aboutMe{
+        text-align: right;
+    }
+
     .aboutMe-content{
         display: flex;
         justify-content: center;
@@ -220,5 +318,11 @@ a{
         border-radius: 50%;
         height: 200px;
         display: inline-block;
+        margin-left: 50px;
+        margin-bottom: 70px;        
+    }   
+
+    .aboutMeFirstIcon{
+        color: black;
     }
 }
