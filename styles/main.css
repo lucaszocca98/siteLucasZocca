@@ -257,7 +257,43 @@ a{
     font-size: 18px;
 }
 
+/* Certificações */
 
+.centification-title{
+    color: var(--greenColor);
+    font-weight: normal;
+    font-size: 20px; 
+    line-height: 1.2;
+    margin-right: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grey-color{
+    color: grey;
+}
+
+.certification-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--greenColor);
+    box-shadow: 0 0 8px var(--greenColor);
+    border-radius: 5px;
+    width: 226px;
+    height: 255px;
+    padding: 0 0 40px 12px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+
+.certification-flex{
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-top: auto;
+}
 
 
 
