@@ -295,7 +295,53 @@ a{
     margin-top: auto;
 }
 
+/* Habilidades */
 
+.abilities-title{
+    color: var(--greenColor);
+    padding: .5em 0;
+    text-align: center;
+}
+
+.skill-text{
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+    line-height: 1.5;
+}
+
+.abilities-images{
+    display: none;
+}
+
+#read-button{
+    border: 2px solid var(--greenColor);
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 6px var(--greenColor);
+    font-size: 14px;
+}
+
+#button-container{
+    text-align: center;
+    padding-bottom: 60px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.06));
+    padding-top: 1.5em;
+}
+
+#hide-skills{
+    display: none;
+}
+
+.padding-button{
+    padding-bottom: 60px;
+}
 
 /* Telas maiores */
 
@@ -307,6 +353,8 @@ a{
 
     .header__menu{
         position: fixed;
+        display: flex;
+        justify-content: center;
     }
 
     .header__btnMenu{
@@ -360,5 +408,38 @@ a{
 
     .aboutMeFirstIcon{
         color: black;
+    }
+
+    /* Habilidades */
+
+    .divide-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 3em;
+    }
+
+    .skill-container{
+        max-width: 970px;
+    }
+
+    .skill-text{
+        padding-bottom: 0;
+    }
+
+    .abilities-images{
+        border-radius: 50%;
+        height: 100px;
+        display: inline-block;
+    }
+
+    .abilities-title{
+        text-align: left;
+        margin-left: 1.75em;
+    }
+
+    #button-container{
+        padding-top: 0;
     }
 }
