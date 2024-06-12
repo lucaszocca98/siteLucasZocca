@@ -15,7 +15,7 @@
 <body class="no-js">
 
     <!-- Menu -->
-
+    <div id="menuInicio"></div>
     <header class="header__menu">
         <a class="lucas" href="#"><span class="comment-detail">/* </span>Lucas Zocca<span class="comment-detail"> */</span></a>
 
@@ -23,12 +23,12 @@
 
         <nav class="header__nav">
             <ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Sobre mim</a></li>
-              <li><a href="#">Experiências</a></li>
-              <li><a href="#">Certificações</a></li>
-              <li><a href="#">Habilidades</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#menuInicio">Início</a></li>
+              <li><a href="#menuSobreMim">Sobre mim</a></li>
+              <li><a href="#menuExperiencia">Experiências</a></li>
+              <li><a href="#menuCertificacoes">Certificações</a></li>
+              <li><a href="#menuHabilidades">Habilidades</a></li>
+              <li><a href="#menuContato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -51,6 +51,7 @@
 
     <!-- Sobre mim -->
 
+    <div id="menuSobreMim"></div>
     <div class="container dark-color zero-spaces">
         <h1 class="white-color margin-AboutMe"><span class="comment-detail">/* </span>Sobre mim<span class="comment-detail"> */</span></h1>
             <div class="aboutMe-content">
@@ -78,6 +79,7 @@
     
     <!-- Experiência -->
 
+    <div id="menuExperiencia"></div>
     <div class="container greydark-color zero-spaces">
         <h1 class="white-color margin-h1"><span class="comment-detail">/* </span>Experiências<span class="comment-detail"> */</span></h1>
         <section class="padding-pageSections experience-textAlign">
@@ -107,10 +109,11 @@
 
     <!-- Certificações -->
 
+    <div id="menuCertificacoes"></div>
     <div class="container dark-color zero-spaces">
         <h1 class="white-color margin-h1"><span class="comment-detail">/* </span>Certificações<span class="comment-detail"> */</span></h1>
         <div class="slider padding-pageSections">
-            <article class="white-color certification-container">
+            <article class="white-color certification-container certification-distance">
                 <h2 class="centification-title">Curso Web Frontend - Fundamentos HTML, CSS e JavaScript</h2>
                 <div class="certification-flex">
                     <p><span class="grey-color">Instituição: </span>Udemy</p>
@@ -121,7 +124,7 @@
                 </div>
             </article>       
 
-            <article class="white-color certification-container">
+            <article class="white-color certification-container certification-distance">
                 <h2 class="centification-title">C# Completo - Programação Orientada a Objetos</h2>
                 <div class="certification-flex">
                     <p><span class="grey-color">Instituição: </span>Udemy</p>
@@ -132,7 +135,7 @@
                 </div>  
             </article>  
 
-            <article class="white-color certification-container">                
+            <article class="white-color certification-container certification-distance">                
                 <h2 class="centification-title">Banco de Dados e SQL</h2>
                 <div class="certification-flex">
                     <p><span class="grey-color">Instituição: </span>Udemy</p>
@@ -143,7 +146,7 @@
                 </div> 
             </article>
 
-            <article class="white-color certification-container">
+            <article class="white-color certification-container certification-distance">
                 <h2 class="centification-title">Power BI do Básico ao Avançado</h2>
                 <div class="certification-flex">
                     <p><span class="grey-color">Instituição: </span>Udemy</p>
@@ -161,6 +164,7 @@
 
     <!-- Habilidades -->
 
+    <div id="menuHabilidades"></div>
     <div class="greydark-color">
         <div class="container zero-spaces">
             <h1 class="white-color margin-h1"><span class="comment-detail">/* </span>Habilidades<span class="comment-detail"> */</span></h1>
@@ -211,15 +215,18 @@
         <div id="button-container">
             <button onclick="verMais()" id="read-button">Ver mais</button>
         </div>
-    </div>
+    </div>    
 
     <!-- Contato -->
 
+    <div id="menuContato"></div>
     <div class="container dark-color zero-spaces padding-pageSections">
         <h1 class="white-color margin-h1"><span class="comment-detail">/* </span>Contato<span class="comment-detail"> */</span></h1>
     </div>
     
     <script src="https://kit.fontawesome.com/7e1e297f3c.js" crossorigin="anonymous"></script>
     <script src="scripts/button.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
